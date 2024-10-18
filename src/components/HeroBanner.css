@@ -1,0 +1,131 @@
+.hero {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .right-h {
+    background-color: red;
+    flex: 1;
+    position: relative;
+    
+  }
+  .hero-blur {
+    width: 22rem;
+    height: 30rem;
+    left: 0;
+  }
+  
+  
+  .the-best {
+    margin-top: 4rem;
+    background-color: #393d42;
+    border-radius: 4rem;
+    width: fit-content;
+    padding: 20px 13px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+  }
+  .the-best > span {
+    z-index: 2;
+  }
+  .the-best > div {
+    position: absolute;
+    background-color: #f44d16;
+    width: 5.4rem;
+    height: 80%;
+    left: 8px;
+    z-index: 1;
+    border-radius: 3rem;
+  }
+  
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-transform: uppercase;
+    font-size: 4.5rem;
+    font-weight: bold;
+    color: white;
+    text-overflow: inherit;
+  }
+  
+  .hero-text > div:nth-of-type(3) {
+    font-size: 1rem;
+    font-weight: 200;
+    text-transform: none;
+    letter-spacing: 1px;
+    width: 80%;
+  }
+  
+  .figures {
+    display: flex;
+    gap: 2rem;
+  }
+  .figures > div {
+    display: flex;
+    flex-direction: column;
+  }
+  .figures > div > span:nth-of-type(1) {
+    color: red;
+    font-size: 2rem;
+  }
+  
+
+
+  .hero-img {
+    position: absolute;
+    top: 1rem;
+    right: 8rem;
+    width: 23rem;
+  }
+  .hero-back {
+    position: absolute;
+    top: -5rem;
+    right: 20rem;
+    z-index: -1;
+    width: 15rem;
+  }
+  
+
+  
+  @media screen and (max-width: 768px) {
+    .hero {
+      flex-direction: column;
+    }
+    .hero-blur
+    {
+      width: 14rem;
+    }
+    .the-best {
+      margin-top: 0;
+      font-size: small;
+      align-self: center;
+      transform: scale(0.8);
+    }
+    .hero-text {
+      font-size: xx-large;
+      align-items: center;
+      justify-content: center;
+    }
+    .hero-text > div:nth-of-type(3) {
+      font-size: small;
+      font-weight: 200;
+      letter-spacing: 1px;
+      text-align: center;
+    }
+    
+    .right-h {
+      position: relative;
+      background: none;
+    }
+    .hero-img {
+      
+      display: none;
+    }
+    .hero-back{
+     display: none;
+    }
+  }
